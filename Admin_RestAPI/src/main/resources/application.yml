@@ -1,0 +1,29 @@
+server:
+  port: 7779
+  
+#spring:
+#  datasource:
+#    driverClassName: org.h2.Driver
+#    password: root
+#    url: jdbc:h2:mem:admindb
+#    username: root
+#  h2:
+#    console:
+#      enabled: true
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+#    defer-datasource-initialization: true
+
+spring:
+  application:
+    name: ADMIN-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/admin_db
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate :
+        dialect: org.hibernate.dialect.MySQL8Dialect
